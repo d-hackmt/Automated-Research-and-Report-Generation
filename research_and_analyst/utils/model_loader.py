@@ -8,10 +8,12 @@ from langchain_groq import ChatGroq
 from logger import GLOBAL_LOGGER as log
 from exception.custom_exception import ResearchAnalystException
 import asyncio
+from dotenv import load_dotenv
 
 
 class ApiKeyManager:
     def __init__(self):
+        load_dotenv()
         self.api_keys = {
             "GOOGLE_API_KEY": os.getenv("GOOGLE_API_KEY"),
             "GROQ_API_KEY": os.getenv("GROQ_API_KEY"),
