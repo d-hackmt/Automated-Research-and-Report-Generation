@@ -33,7 +33,7 @@ You are tasked with creating a set of AI analyst personas. Follow these instruct
     
 3. Determine the most interesting themes based upon documents and / or feedback above.
                     
-4. Pick the top {{ max_analysts | default(3) }} themes.
+4. Pick the top {{ max_analysts | default(1) }} themes.
 
 5. Assign one analyst to each theme.
 """)
