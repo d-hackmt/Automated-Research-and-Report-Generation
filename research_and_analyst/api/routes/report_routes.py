@@ -69,7 +69,7 @@ async def dashboard(request: Request):
 @router.post("/generate_report", response_class=HTMLResponse)
 async def generate_report(request: Request, topic: str = Form(...)):
     service = ReportService()
-    result = service.start_report_generation(topic, 3)
+    result = service.start_report_generation(topic, 1)
     thread_id = result["thread_id"] 
 
     return request.app.templates.TemplateResponse(

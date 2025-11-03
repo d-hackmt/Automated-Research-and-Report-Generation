@@ -24,7 +24,6 @@ pipeline {
         STORAGE_ACCOUNT_KEY = credentials('storage-account-key')
 
         // API Keys (add these to Jenkins)
-        OPENAI_API_KEY = credentials('openai-api-key')
         GOOGLE_API_KEY = credentials('google-api-key')
         GROQ_API_KEY = credentials('groq-api-key')
         TAVILY_API_KEY = credentials('tavily-api-key')
